@@ -1,0 +1,16 @@
+<h2 class="page-heading-txt">Schedule</h2>
+
+<hr class="page-heading-line" />
+
+<ul>
+  {{#each model as |event|}}
+
+
+  <li>{{event.title}} {{event.time}} </li>
+
+
+
+  {{/each}}
+</ul>
+
+{{outlet}}

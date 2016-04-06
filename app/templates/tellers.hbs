@@ -1,0 +1,16 @@
+<h2 class="page-heading-txt">Tellers</h2>
+
+<hr class="page-heading-line" />
+
+<ul>
+  {{#each model as |teller|}}
+
+
+  <li>{{teller.name}} {{teller.url}} </li>
+
+
+
+  {{/each}}
+</ul>
+
+{{outlet}}
