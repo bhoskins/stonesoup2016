@@ -1,0 +1,54 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Soup 'n Story Gala",
+      "location": "132 Main St",
+      "day": "Thursday",
+      "time": "6:00-8:30pm",
+      "description": "Kick-Off supper and storytelling. $25/person; $45/couple - Limited Seating",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": [1, 2]
+    },
+    {
+      "id": 2,
+      "title": "On-Site Registration and Information",
+      "location": "132 Main St & 116 Main St",
+      "day": "Friday",
+      "time": "9am-6:00pm",
+      "description": "Tickets, Registration, Information",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": []
+    },
+    {
+      "id": 3,
+      "title": "Stone Soup Market",
+      "location": "132 Main St",
+      "day": "Friday",
+      "time": "noon-5pm",
+      "description": "Books, Teller CDs, Souvenirs",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": []
+    }
+
+  ],
+  "tellers": [
+    {
+      "id": 1,
+      "name": "Sheila Arnold Jones",
+      "url": "http://www.mssheila.org",
+      "bio": "Master Storyteller...",
+      "avatar": "assets/images/sheilajones.jpg",
+      "events": [1, 2, 3]
+    },
+    {
+      "id": 2,
+      "name": "Tim Tingle",
+      "url": "http://www.timtingle.com",
+      "bio": "Tim is an enrolled member of the Choctaw Nation...",
+      "avatar": "assets/images/timtingle.jpg",
+      "events": [1, 5, 7]
+    }
+
+    ]
+}
