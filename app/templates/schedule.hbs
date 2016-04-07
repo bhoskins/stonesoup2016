@@ -1,0 +1,67 @@
+<h2 class="page-heading-txt">Schedule</h2>
+
+<hr class="page-heading-line" />
+
+<h2>Thursday, April 14</h2>
+
+<ul>
+  {{#each model as |event| }}
+  {{#if event.isThurs}}
+  <li>
+    {{event.title}}
+    {{event.location}}
+    {{event.time}}
+  </li>
+  {{/if}}
+
+  {{/each}}
+</ul>
+
+<h2>Friday, April 15</h2>
+
+<ul>
+  {{#each model as |event| }}
+  {{#if event.isFri}}
+  <li>
+    {{event.title}}
+    {{event.location}}
+    {{event.time}}
+  </li>
+  {{/if}}
+
+  {{/each}}
+</ul>
+
+<h2>Saturday, April 16</h2>
+
+<ul>
+  {{#each model as |event| }}
+  {{#if event.isSat}}
+  <li>
+    {{event.title}}
+    {{event.location}}
+    {{event.time}}
+  </li>
+  {{/if}}
+
+  {{/each}}
+</ul>
+
+<h2>Sunday, April 17</h2>
+
+<ul>
+  {{#each model as |event| }}
+  {{#if event.isSun}}
+  <li>
+    {{event.title}}
+    {{event.location}}
+    {{event.time}}
+  </li>
+  {{/if}}
+
+  {{/each}}
+</ul>
+
+
+
+{{outlet}}

@@ -9,4 +9,13 @@
 <!-- Indicates a successful or positive action -->
 <button type="button" class="btn btn-success">Success</button>
 
+<nav>
+  {{#link-to 'index'}}Home{{/link-to}}
+  {{#link-to 'about'}}About{{/link-to}}
+  {{#link-to 'schedule'}}Schedule{{/link-to}}
+  {{#link-to 'map'}}Map{{/link-to}}
+  {{#link-to 'tellers'}}Tellers{{/link-to}}
+  {{#link-to 'contact'}}Contact{{/link-to}}
+</nav>
+
 {{outlet}}
