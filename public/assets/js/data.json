@@ -9,7 +9,7 @@
       "time": "6:00-8:30pm",
       "description": "Kick-Off supper and storytelling. $25/person; $45/couple - Limited Seating",
       "icons": ["file1.png", "file2.png"],
-      "storytellers": [1, 2]
+      "storytellers": ["Sheila Arnold Jones", " Tim Tingle", " Martha Reed Johnson", " Faye Fulton", " Madeline Pots", " Robin Schulte"]
     },
     {
       "id": 2,

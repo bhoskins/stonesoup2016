@@ -1,67 +1,242 @@
-<h2 class="page-heading-txt">Schedule</h2>
+<div class="page-header">
+  <h1 class="page-heading-txt">Schedule</h1>
+</div>
 
 <hr class="page-heading-line" />
 
-<h2>Thursday, April 14</h2>
+<!-- Bootstrap accordion rules
+  .panel-title a['href':'#?'] = panel-collapse #?
+  .panel-collapse class "in" = panel open
+  -->
 
-<ul>
+<!--
+to here@@@@@@@@
+-->
+
+<div class="accordion-container">
+  <h2 class="accordion-day-txt">Thursday, April 14</h2>
+
+  <div class="panel-group" id="accordionThur" role="tablist" aria-multiselectable="true">
+
   {{#each model as |event| }}
   {{#if event.isThurs}}
-  <li>
-    {{event.title}}
-    {{event.location}}
-    {{event.time}}
-  </li>
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingOne">
+        <h4 class="panel-title">
+          <a role="button"
+            data-toggle="collapse"
+            data-parent="#accordionThur"
+            href="#{{event.id}}"
+            aria-expanded="true"
+            aria-controls="{{event.id}}">
+              <div class="schedule-event-time">
+                {{event.time}} <br />
+                icons here
+              </div><!-- .schedule-event-time -->
+              <div class="schedule-event-title" >
+                {{event.title}}<br />
+                {{event.location}}
+              </div><!-- .schedule-event-title-->
+          </a>
+        </h4>
+      </div><!-- .panel-heading -->
+
+      <div id="{{event.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+          <div class="event-description">
+            {{event.description}}
+          </div>
+          {{#if event.storytellers}}
+          <div class="featured-tellers">
+            <h3 class="featured-tellers-txt">
+              <span class="featured-tellers-emphasis">Featured Storytellers:</span>
+            </h3>
+            <h3>{{event.storytellers}}</h3>
+          </div>
+          {{/if}}
+          <div>
+            {{#link-to 'map' class="tellers-btn"}}Map{{/link-to}}
+            {{#link-to 'tellers' class="tellers-btn"}}Tellers{{/link-to}}
+          </div>
+
+        </div><!-- .panel-body -->
+      </div><!-- .panel-collapse -->
+    </div><!-- .panel -->
+
   {{/if}}
-
   {{/each}}
-</ul>
 
-<h2>Friday, April 15</h2>
+  </div><!-- .panel-group -->
+</div><!-- .accordion-thur-container -->
 
-<ul>
+<!-- Friday Accordion -->
+<div class="accordion-container">
+  <h2 class="accordion-day-txt">Friday, April 15</h2>
+
+  <div class="panel-group" id="accordionFri" role="tablist" aria-multiselectable="true">
+
   {{#each model as |event| }}
   {{#if event.isFri}}
-  <li>
-    {{event.title}}
-    {{event.location}}
-    {{event.time}}
-  </li>
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingOne">
+        <h4 class="panel-title">
+          <a role="button"
+            data-toggle="collapse"
+            data-parent="#accordionFri"
+            href="#{{event.id}}"
+            aria-expanded="true"
+            aria-controls="{{event.id}}">
+              <div class="schedule-event-time">
+                {{event.time}} <br />
+                icons here
+              </div><!-- .schedule-event-time -->
+              <div class="schedule-event-title" >
+                {{event.title}}<br />
+                {{event.location}}
+              </div><!-- .schedule-event-title-->
+          </a>
+        </h4>
+      </div><!-- .panel-heading -->
+
+      <div id="{{event.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+          {{event.description}}
+
+          {{#if event.storytellers}}
+          <div class="featured-tellers">
+            <h3 class="featured-tellers-txt">
+              <span class="featured-tellers-emphasis">Featured Storytellers:</span>
+            </h3>
+            <h3>{{event.storytellers}}</h3>
+          </div>
+          {{/if}}
+          <div class="schedule-btns-div">
+            {{#link-to 'map' class="tellers-btn"}}Map{{/link-to}}
+            {{#link-to 'tellers' class="tellers-btn"}}Tellers{{/link-to}}
+          </div>
+        </div><!-- .panel-body -->
+      </div><!-- .panel-collapse -->
+    </div><!-- .panel -->
+
   {{/if}}
-
   {{/each}}
-</ul>
 
-<h2>Saturday, April 16</h2>
+  </div><!-- .panel-group -->
+</div><!-- .accordion-thur-container -->
 
-<ul>
+<!-- Saturday Accordion -->
+<div class="accordion-container">
+  <h2 class="accordion-day-txt">Saturday, April 16</h2>
+
+  <div class="panel-group" id="accordionSat" role="tablist" aria-multiselectable="true">
+
   {{#each model as |event| }}
   {{#if event.isSat}}
-  <li>
-    {{event.title}}
-    {{event.location}}
-    {{event.time}}
-  </li>
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingOne">
+        <h4 class="panel-title">
+          <a role="button"
+            data-toggle="collapse"
+            data-parent="#accordionSat"
+            href="#{{event.id}}"
+            aria-expanded="true"
+            aria-controls="{{event.id}}">
+              <div class="schedule-event-time">
+                {{event.time}} <br />
+                icons here
+              </div><!-- .schedule-event-time -->
+              <div class="schedule-event-title" >
+                {{event.title}}<br />
+                {{event.location}}
+              </div><!-- .schedule-event-title-->
+          </a>
+        </h4>
+      </div><!-- .panel-heading -->
+
+      <div id="{{event.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+          {{event.description}}
+
+          {{#if event.storytellers}}
+          <div class="featured-tellers">
+            <h3 class="featured-tellers-txt">
+              <span class="featured-tellers-emphasis">Featured Storytellers:</span>
+            </h3>
+            <h3>{{event.storytellers}}</h3>
+          </div>
+          {{/if}}
+          <div class="schedule-btns-div">
+            {{#link-to 'map' class="tellers-btn"}}Map{{/link-to}}
+            {{#link-to 'tellers' class="tellers-btn"}}Tellers{{/link-to}}
+          </div>
+        </div><!-- .panel-body -->
+      </div><!-- .panel-collapse -->
+    </div><!-- .panel -->
+
   {{/if}}
-
   {{/each}}
-</ul>
 
-<h2>Sunday, April 17</h2>
+  </div><!-- .panel-group -->
+</div><!-- .accordion-thur-container -->
 
-<ul>
+<!-- Sunday Accordion -->
+<div class="accordion-container">
+  <h2 class="accordion-day-txt">Sunday, April 16</h2>
+
+  <div class="panel-group" id="accordionSun" role="tablist" aria-multiselectable="true">
+
   {{#each model as |event| }}
   {{#if event.isSun}}
-  <li>
-    {{event.title}}
-    {{event.location}}
-    {{event.time}}
-  </li>
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingOne">
+        <h4 class="panel-title">
+          <a role="button"
+            data-toggle="collapse"
+            data-parent="#accordionSun"
+            href="#{{event.id}}"
+            aria-expanded="true"
+            aria-controls="{{event.id}}">
+              <div class="schedule-event-time">
+                {{event.time}} <br />
+                icons here
+              </div><!-- .schedule-event-time -->
+              <div class="schedule-event-title" >
+                {{event.title}}<br />
+                {{event.location}}
+              </div><!-- .schedule-event-title-->
+          </a>
+        </h4>
+      </div><!-- .panel-heading -->
+
+      <div id="{{event.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+          {{event.description}}
+
+          {{#if event.storytellers}}
+          <div class="featured-tellers">
+            <h3 class="featured-tellers-txt">
+              <span class="featured-tellers-emphasis">Featured Storytellers:</span>
+            </h3>
+            <h3>{{event.storytellers}}</h3>
+          </div>
+          {{/if}}
+          <div class="schedule-btns-div">
+            {{#link-to 'map' class="tellers-btn"}}Map{{/link-to}}
+            {{#link-to 'tellers' class="tellers-btn"}}Tellers{{/link-to}}
+          </div>
+        </div><!-- .panel-body -->
+      </div><!-- .panel-collapse -->
+    </div><!-- .panel -->
+
   {{/if}}
-
   {{/each}}
-</ul>
 
+  </div><!-- .panel-group -->
+</div><!-- .accordion-thur-container -->
 
 
 {{outlet}}
