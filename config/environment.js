@@ -13,6 +13,12 @@ module.exports = function(environment) {
       }
     },
 
+    'g-map': {
+      libraries: ['places', 'geometry'],
+      key: 'AIzaSyA-ySvDfkbdJ0CZKzo6CH2xFL0zRBxQ-0g',
+      protocol: 'https'
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

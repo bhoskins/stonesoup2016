@@ -2,4 +2,9 @@
 
 <hr class="page-heading-line" />
 
+{{#g-map lat=34.74048 lng=-82.03491 zoom=17 options=customOptions as |context| }}
+  {{g-map-marker context lat=34.739373 lng=-82.037085 onClick="markerClick" label="1" title="Main Venue" }}
+
+{{/g-map}}
+
 {{outlet}}
