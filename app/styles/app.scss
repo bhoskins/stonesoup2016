@@ -26,8 +26,21 @@ $home-container-width: 500px;
 //Google Map Styles
 
 .g-map-canvas {
-  width: 600px;
+  display: inline-block;
+  width: 73%;
   height: 400px;
+}
+
+.map-legend ol {
+  text-decoration: none;
+  padding: 0;
+  padding-left: 20px;
+
+}
+
+.map-legend {
+  display: inline-block;
+  width: 25%;
 }
 
 //Page Styles

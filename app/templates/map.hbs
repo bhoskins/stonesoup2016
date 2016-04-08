@@ -5,8 +5,76 @@
 <hr class="page-heading-line" />
 
 {{#g-map lat=34.74048 lng=-82.03491 zoom=17 options=customOptions as |context| }}
-  {{g-map-marker context lat=34.739373 lng=-82.037085 onClick="markerClick" label="1" title="Main Venue" }}
+  {{g-map-marker context lat=34.738936 lng=-82.036902 onClick="markerClick" label="1" title="Main Venue * 132 S. Main St." }}
+
+  {{g-map-marker context lat=34.739263 lng=-82.037112 onClick="markerClick" label="2" title="Woodruff Community Center * 116 S. Main St." }}
+
+  {{g-map-marker context lat=34.739444 lng=-82.035440 onClick="markerClick" label="3" title="Timrod Library * E. Hayne St." }}
+
+  {{g-map-marker context lat=34.739927 lng=-82.035083 onClick="markerClick" label="4" title="Woodruff Library * 270 E. Hayne St." }}
+
+  {{g-map-marker context lat=34.741457 lng=-82.032237 onClick="markerClick" label="5" title="First Presbyterian Church * 360 E. Georgia St." }}
+
+  {{g-map-marker context lat=34.752512 lng=-82.046206 onClick="markerClick" label="A" title="Tony's Pizza & Subs" }}
+
+  {{g-map-marker context lat=34.751617 lng=-82.046276 onClick="markerClick" label="B" title="McDonalds" }}
+
+  {{g-map-marker context lat=34.749881 lng=-82.045414 onClick="markerClick" label="C" title="Mr Jalapeno" }}
+
+  {{g-map-marker context lat=34.746215 lng=-82.044509 onClick="markerClick" label="D" title="Subway" }}
+
+  {{g-map-marker context lat=34.746204 lng=-82.044529 onClick="markerClick" label="E" title="Little Caesars Pizza" }}
+
+  {{g-map-marker context lat=34.742838 lng=-82.040651 onClick="markerClick" label="F" title="Broncos" }}
+
+  {{g-map-marker context lat=34.743430 lng=-82.039813 onClick="markerClick" label="G" title="Great Wall of China" }}
+
+  {{g-map-marker context lat=34.743547 lng=-82.039980 onClick="markerClick" label="H" title="Friends Cafe" }}
+
+  {{g-map-marker context lat=34.738232 lng=-82.035665 onClick="markerClick" label="I" title="Burger King" }}
+
+  {{g-map-marker context lat=34.736445 lng=-82.034585 onClick="markerClick" label="J" title="Zaxbys" }}
+
+  {{g-map-marker context lat=34.734550 lng=-82.029339 onClick="markerClick" label="K" title="Pizza Hut" }}
+
+  {{g-map-marker context lat=34.734496 lng=-82.028852 onClick="markerClick" label="L" title="Demeter's" }}
+
+  {{g-map-marker context lat=34.733251 lng=-82.026519 onClick="markerClick" label="M" title="Pete's Drive-in" }}
+
+  {{g-map-marker context lat=34.732807 lng=-82.026611 onClick="markerClick" label="N" title="Roma's" }}
 
 {{/g-map}}
+
+<div class="map-legend">
+  <h2>Venues</h2>
+  <ol class="venue-list">
+    <li>Main Storytelling Venue (132 S. Main St.)</li>
+    <li>Woodruff Community Center (116 S. Main St.)</li>
+    <li>Timrod Library (East Hayne St.)</li>
+    <li>Woodruff Library (270 E. Hayne St.)</li>
+    <li>First Presbyterian (360 E. Georgia St.)</li>
+  </ol>
+
+  <h2>Restaurants</h2>
+    <ol type="A" class="food-list">
+      <li>Tony's Pizza & Subs</li>
+      <li>McDonalds</li>
+      <li>Mr. Jalapeno (Mexican)</li>
+      <li>Subway</li>
+      <li>Little Caesars Pizza</li>
+      <li>Broncos (Mexican)</li>
+      <li>Great Wall of China</li>
+      <li>Friends Cafe (Breakfast/Burgers)</li>
+      <li>Burger King</li>
+      <li>Zaxbys</li>
+      <li>Pizza Hut</li>
+      <li>Demeters (Greek/Subs/Salads/Pizza)</li>
+      <li>Pete's Drive-in (Fast Food)</li>
+      <li>Roma's (Meat & 2/Sandwiches/Salads)</li>
+
+
+
+    </ol>
+</div>
 
 {{outlet}}
