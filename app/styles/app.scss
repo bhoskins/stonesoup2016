@@ -205,7 +205,7 @@ a:hover {
   border-bottom: 1px solid $color-theme-red;
 }
 .accordion-day-txt {
-  color: $color-theme-red;
+  color: $color-theme-purple;
   font-size: 20px;
   font-weight: bold;
 }
@@ -303,6 +303,12 @@ a.tellers-btn:hover {
   margin-top: 5px;
 }
 
+/***********************
+  About Page
+*************************/
+.panel-about .panel-body {
+  text-align: left;
+}
 
 
 

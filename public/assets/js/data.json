@@ -152,7 +152,7 @@
       "day": "Saturday",
       "isSat": true,
       "time": "1:00-2:00pm",
-      "description": "Emcee - Cora Newcomb. Open competition for Amateurs. Both Youth and Adults will compete for prizes. Sign up. 7 minute limit. Free Admission!",
+      "description": "Emcee - Cora Newcomb. Open competition for Amateurs. Both Youth and Adults will compete for prizes. Winners present at the Grand Finale. Sign up. 7 minute limit. Free Admission!",
       "icons": ["commenting", "trophy"],
       "storytellers": []
     },
@@ -176,7 +176,7 @@
       "day": "Saturday",
       "isSat": true,
       "time": "4:00-5:00pm",
-      "description": "Emcee - Rodger Ellingwood. Yes, a new champion liar will be crowned. You don't want to miss this. $5 entry fee. Free Admission!",
+      "description": "Emcee - Rodger Ellingwood. Yes, a new champion liar will be crowned. Winner presents at the Grand Finale. You don't want to miss this. $5 entry fee. Free Admission!",
       "icons": ["commenting", "trophy"],
       "storytellers": []
     },
@@ -224,7 +224,7 @@
       "day": "Sunday",
       "isSun": true,
       "time": "11:00am-Noon",
-      "description": "Worship with a 20-30 minute story sharing time by Tim Tingle. All are welcome. Free Admission!",
+      "description": "Worship with a 20-30 minute story sharing time by Tim Tingle. All faiths are welcome. Free Admission!",
       "icons": ["commenting"],
       "storytellers": ["Tim Tingle"]
     }
