@@ -4,10 +4,11 @@
       "id": 1,
       "title": "Soup 'n Story Gala",
       "location": "132 Main St",
+      "location-name": "Main Venue",
       "day": "Thursday",
       "isThurs": true,
       "time": "6:00-8:30pm",
-      "description": "Kick-Off supper and storytelling. $25/person; $45/couple - Limited Seating",
+      "description": "Kick-Off supper and storytelling. $25/person; $45/couple - Limited Seating - Ticket Required",
       "icons": ["file1.png", "file2.png"],
       "storytellers": ["Sheila Arnold Jones", " Tim Tingle", " Martha Reed Johnson", " Faye Fulton", " Madeline Pots", " Robin Schulte"]
     },
@@ -15,25 +16,218 @@
       "id": 2,
       "title": "On-Site Registration and Information",
       "location": "132 Main St & 116 Main St",
+      "location-name": "Main Venue & Community Center",
       "day": "Friday",
       "isFri": true,
       "time": "9am-6:00pm",
-      "description": "Tickets, Registration, Information",
+      "description": "Tickets, Registration &  Information available for pick-up or purchase.",
       "icons": ["file1.png", "file2.png"],
       "storytellers": []
     },
     {
       "id": 3,
-      "title": "Stone Soup Market",
+      "title": "Lunch and Laugh",
       "location": "132 Main St",
+      "location-name": "Main Venue",
       "day": "Friday",
       "isFri": true,
-      "time": "noon-5pm",
-      "description": "Books, Teller CDs, Souvenirs",
+      "time": "Noon-1:30pm",
+      "description": "Lunch and story with 45 minute performance by Tim Tingle. Pre-registration required. Call 864-476-8770. $12/person. For groups of 6 or more $10/person. Ticket Required.",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": ["Tim Tingle"]
+    },
+    {
+      "id": 4,
+      "title": "Stone Soup Market",
+      "location": "132 Main St",
+      "location-name": "Main Venue",
+      "day": "Friday",
+      "isFri": true,
+      "time": "Noon-5pm",
+      "description": "Books, Teller CDs and  Souvenirs available for purchase.",
       "icons": ["file1.png", "file2.png"],
       "storytellers": []
+    },
+    {
+      "id": 5,
+      "title": "Friday Night Special",
+      "location": "132 Main St",
+      "location-name": "Main Venue",
+      "day": "Friday",
+      "isFri": true,
+      "time": "6:00-7:00pm",
+      "description": "Live storytelling with Karyn Page Davies as Emcee. Free Admission!",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": ["Faye Fulton", " Martha Reed Johnson"]
+    },
+    {
+      "id": 6,
+      "title": "Stone Soup Supper",
+      "location": "132 Main St",
+      "location-name": "Main Venue",
+      "day": "Friday",
+      "isFri": true,
+      "time": "7:00-8:00pm",
+      "description": "Enjoy dinner in an engaging atmosphere with personal contact with storytellers. Suggested donation $5.",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": []
+    },
+    {
+      "id": 7,
+      "title": "Ghost Stories a la Stone Soup",
+      "location": "132 Main St",
+      "location-name": "Main Venue",
+      "day": "Friday",
+      "isFri": true,
+      "time": "6:00-7:00pm",
+      "description": "Live storytelling with Karyn Page Davies as Emcee. Recommended for children 12 years and up. Free Admission!",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": ["Robin Schulte", " Madeline Pots", " Tim Tingle", " Sheila Arnold Jones"]
+    },
+    {
+      "id": 8,
+      "title": "Storytelling Registation and Info",
+      "location": "132 Main & 116 S. Main",
+      "location-name": "Main Venue & Community Center",
+      "day": "Saturday",
+      "isSat": true,
+      "time": "9:00am-6:00pm",
+      "description": "Tickets, Registration and information available for pick-up or purchase.",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": []
+    },
+    {
+      "id": 9,
+      "title": "Stone Soup Market",
+      "location": "132 S Main",
+      "location-name": "Main Venue",
+      "day": "Saturday",
+      "isSat": true,
+      "time": "9:30-5:00pm",
+      "description": "Books, Teller Cds, Sourvenirs available for purchase.",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": []
+    },
+    {
+      "id": 10,
+      "title": "Back to the Future",
+      "location": "234 E Hayne",
+      "location-name": "Timrod or Woodruff Library",
+      "day": "Saturday",
+      "isSat": true,
+      "time": "10:00-11:30am",
+      "description": "Abigail Adams and Old Bess in person. Free Admission!",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": ["Faye Fulton", " Sheila Arnold Jones"]
+    },
+    {
+      "id": 11,
+      "title": "What will you learn today? Children's Stories",
+      "location": "234 E Hayne",
+      "location-name": "Woodruff Library",
+      "day": "Saturday",
+      "isSat": true,
+      "time": "10:00-11:30am",
+      "description": "Engaging stories for children ages 5-12. Free Admission!",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": ["Madeline Pots", " Robin Schulte"]
+    },
+    {
+      "id": 12,
+      "title": "New Voices I",
+      "location": "132 Main St",
+      "location-name": "Main Venue",
+      "day": "Saturday",
+      "isSat": true,
+      "time": "11:30am-1:00pm",
+      "description": "Hear some fresh new storytellers with some great tales to tell. Emcee - Linda Goodman. Free Admission!",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": ["Sarah Brady", " L Schuyler Ford", " Michael Ruther", " Judi Tarowsy", " Wanda Violet"]
+    },
+    {
+      "id": 13,
+      "title": "'My Tale' Story Competition",
+      "location": "116 S Main St",
+      "location-name": "Community Center",
+      "day": "Saturday",
+      "isSat": true,
+      "time": "1:00-2:00pm",
+      "description": "Emcee - Cora Newcomb. Open competition for Amateurs. Both Youth and Adults will compete for prizes. Sign up. 7 minute limit. Free Admission!",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": []
+    },
+    {
+      "id": 14,
+      "title": "New Voices II",
+      "location": "132 S Main St",
+      "location-name": "Main Venue",
+      "day": "Saturday",
+      "isSat": true,
+      "time": "2:00-3:30pm",
+      "description": "Emcee - Linda Goodman. Round two of fresh new storytellers with some great tales to tell. Free Admission!",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": ["Lisa Hollingsworth-Segedy", " Rona Leventhal", " Mike Lockett", " Ingrid Nixon", " ?? 2 mystery tellers ??"]
+    },
+    {
+      "id": 15,
+      "title": "Liar's Contest",
+      "location": "132 S Main St",
+      "location-name": "Main Venue",
+      "day": "Saturday",
+      "isSat": true,
+      "time": "4:00-5:00pm",
+      "description": "Emcee - Rodger Ellingwood. Yes, a new champion liar will be crowned. You don't want to miss this. $5 entry fee. Free Admission!",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": []
+    },
+    {
+      "id": 16,
+      "title": "Carolina New Voices ",
+      "location": "132 S Main St",
+      "location-name": "Main Venue",
+      "day": "Saturday",
+      "isSat": true,
+      "time": "4:00-5:00pm",
+      "description": "Emcee - Suzette Hawkins, President SCSN. Come hear fresh new voices from South Carolina. Free Admission!",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": ["Wright Clarkson", " Steve Cunningham", " Terri Ingals", " Sherry Lovett", " Elisha Minter", " Marj Pullam"]
+    },
+    {
+      "id": 17,
+      "title": "'Tell It All' The Grand Finale",
+      "location": "132 S Main St",
+      "location-name": "Main Venue",
+      "day": "Saturday",
+      "isSat": true,
+      "time": "7:00-9:00pm",
+      "description": "The Grand Daddy of Storytelling at the Stone Soup Festival. All the featured storytellers will be strutting their stuff. Winners of 'Biggest Liar' and 'My Tales' competitions will also be presenting. Snacks available. $8/person or $20/family (2 adults and children under 16).",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": ["All Featured Storytellers", "Winners of 'Biggest Liar' and 'My Tale' Competitions"]
+    },
+    {
+      "id": 18,
+      "title": "Time Well Spent - After Party",
+      "location": "132 S Main St",
+      "location-name": "Main Venue",
+      "day": "Saturday",
+      "isSat": true,
+      "time": "9:30-10:30pm",
+      "description": "Time to kick back and enjoy the great spirit of storytelling by swapping tales with new friends over refreshments.",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": []
+    },
+    {
+      "id": 19,
+      "title": "Stories of Grace",
+      "location": "360 E. Georgia",
+      "location-name": "First Presbyterian Church",
+      "day": "Sunday",
+      "isSun": true,
+      "time": "11:00am-Noon",
+      "description": "Worship with a 20-30 minute story sharing time by Tim Tingle. All are welcome. Free Admission!",
+      "icons": ["file1.png", "file2.png"],
+      "storytellers": ["Tim Tingle"]
     }
-
   ],
   "tellers": [
     {
@@ -53,5 +247,14 @@
       "events": [1, 5, 7]
     }
 
+    ],
+    "markers": [
+      {
+        "id": "A",
+        "name": "Main Venue",
+        "location": "132 S. Main St",
+        "lat": "",
+        "lng": ""
+      }
     ]
 }

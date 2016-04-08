@@ -214,8 +214,9 @@ a:hover {
 
 #headingOne {
   height: 60px;
-  padding: 2px;
+  padding: 5px;
 }
+
 
 .panel-heading {
   position: relative;
@@ -226,16 +227,31 @@ a:hover {
 }
 
 .schedule-event-time {
-  left: 0;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 
 .schedule-event-title {
-  right: 0;
+  right: 5px;
   text-align: right;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 
 .panel-body {
   text-align: center;
+}
+
+.event-title-txt {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .featured-tellers-txt {
