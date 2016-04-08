@@ -27,15 +27,22 @@
             aria-expanded="true"
             aria-controls="{{event.id}}">
               <div class="schedule-event-time">
-                {{event.time}} <br />
+                <span class="event-title-txt">
+                {{event.time}}</span> <br />
+
                 {{#each event.icons as |icon|}}
+                <span class="event-icons">
                 {{fa-icon icon}}
+                </span>
                 {{/each}}
 
               </div><!-- .schedule-event-time -->
               <div class="schedule-event-title" >
-                <span class="event-title-txt">{{event.title}}</span><br />
+                <span class="event-title-txt">
+                {{event.title}}</span><br />
+                <span class="event-location">
                 {{event.location-name}}
+                </span>
               </div><!-- .schedule-event-title-->
           </a>
         </h4>
@@ -88,14 +95,20 @@
             aria-expanded="true"
             aria-controls="{{event.id}}">
               <div class="schedule-event-time">
-                {{event.time}} <br />
+                <span class="event-title-txt">
+                {{event.time}}</span> <br />
                 {{#each event.icons as |icon|}}
+                <span class="event-icons">
                 {{fa-icon icon}}
+                </span>
                 {{/each}}
               </div><!-- .schedule-event-time -->
               <div class="schedule-event-title" >
-                {{event.title}}<br />
+                <span class="event-title-txt">
+                {{event.title}}</span><br />
+                <span class="event-location">
                 {{event.location-name}}
+                </span>
               </div><!-- .schedule-event-title-->
           </a>
         </h4>
@@ -146,14 +159,20 @@
             aria-expanded="true"
             aria-controls="{{event.id}}">
               <div class="schedule-event-time">
-              {{event.time}} <br />
+              <span class="event-title-txt">
+              {{event.time}}</span> <br />
               {{#each event.icons as |icon|}}
+              <span class="event-icons">
               {{fa-icon icon}}
+              </span>
               {{/each}}
               </div><!-- .schedule-event-time -->
               <div class="schedule-event-title" >
-                {{event.title}}<br />
+                <span class="event-title-txt">
+                {{event.title}}</span><br />
+                <span class="event-location">
                 {{event.location-name}}
+                </span>
               </div><!-- .schedule-event-title-->
           </a>
         </h4>
@@ -204,14 +223,18 @@
             aria-expanded="true"
             aria-controls="{{event.id}}">
               <div class="schedule-event-time">
-              {{event.time}} <br />
+              <span class="event-title-txt">
+              {{event.time}}</span> <br />
               {{#each event.icons as |icon|}}
               {{fa-icon icon}}
               {{/each}}
               </div><!-- .schedule-event-time -->
               <div class="schedule-event-title" >
-                {{event.title}}<br />
+                <span class="event-title-txt">
+                {{event.title}}</span><br />
+                <span class="event-location">
                 {{event.location-name}}
+                </span>
               </div><!-- .schedule-event-title-->
           </a>
         </h4>
