@@ -280,22 +280,28 @@ a:hover {
   display: inline-block;
 }
 
-.tellers-btn {
+/***************************
+  Buttons
+***************************/
+
+.tellers-btn, .schedule-btn {
   display: inline-block;
   width: 100px;
   background: $color-theme-purple;
   color: white;
   font-size: 20px;
+  text-align: center;
   line-height: 30px;
   border-radius: 10px;
   box-shadow: 0 5px 5px #CAC8FB;
 }
 
-a.tellers-btn, a.tellers-btn:visited, a.tellers-btn:active {
+a.tellers-btn, a.tellers-btn:visited, a.tellers-btn:active,
+a.schedule-btn, a.schedule-btn:visited, a.schedule-btn:active {
   color: #fff;
 }
 
-a.tellers-btn:hover {
+a.tellers-btn:hover, a.schedule-btn:hover {
   background: $color-theme-red;
 }
 
@@ -308,6 +314,44 @@ a.tellers-btn:hover {
 *************************/
 .panel-about .panel-body {
   text-align: left;
+}
+
+/***********************
+  Contact Page
+*************************/
+
+.panel-contact .panel-body {
+  text-align: left;
+}
+
+/***********************
+  Tellers Page
+*************************/
+.row2 {
+  border-bottom: 2px solid $color-theme-red;
+}
+
+.row {
+  padding: 10px;
+}
+
+.row img {
+  border: 1px solid lime;
+}
+
+.row-heading,
+.row-subheading {
+  font-weight: bold;
+  color: $color-theme-red;
+}
+
+.row-heading {
+  font-size: 20px;
+}
+
+
+.row-subheading {
+  font-size: 18px;
 }
 
 

@@ -233,20 +233,51 @@
     {
       "id": 1,
       "name": "Sheila Arnold Jones",
-      "url": "http://www.mssheila.org",
-      "bio": "Master Storyteller...",
-      "avatar": "assets/images/sheilajones.jpg",
-      "events": [1, 2, 3]
+      "url": "http://www.MsSheila.org",
+      "bio": "Master Storyteller Sheila Arnold Jones has been gifted by God with performance skills and has been using this talent since she was eight years old. She became a full-time Story-teller in 2003 sharing “whatever story fits good in her mouth”. She also travels throughout the country providing Historic Character Presentations, Christian Monologues and Professional Development for Educators to schools and organizations. Sheila is often interactive and many times intersperses stories with song. She has participated in Storytelling Festivals in Virginia, Nebraska, North Carolina, Ohio, and was a New Voice Featured Teller at National Story-telling Festival, Jonesborough, TN in October 2015.",
+      "avatar": "star.png",
+      "events": ["Fri - Primary School", "Fri - Ghost Stories a la Stone Soup", "Sat - Back to the Future", "Sat - Grand Finale"]
     },
     {
       "id": 2,
       "name": "Tim Tingle",
-      "url": "http://www.timtingle.com",
-      "bio": "Tim is an enrolled member of the Choctaw Nation...",
-      "avatar": "assets/images/timtingle.jpg",
-      "events": [1, 5, 7]
+      "url": "http://www.TimTingle.com",
+      "bio": "Tim Tingle is an enrolled member of the Choctaw Na-tion of Oklahoma and a frequent speaker at tribal events. His great-great grandfather, John Carnes, walked the Trail of Tears in 1835, and memories of this family epic fuel his writing and telling. Author of thirteen books, from children’s illustrated to Young Adult, Tingle has performed at the Kennedy Center in Washington, D.C. Accompanying himself with flute and drum, he is a frequent presenter at the National Mu-seum of the American Indian and appears often at the National Storytelling Festi-val.",
+      "avatar": "star.png",
+      "events": ["Fri - Middle School", "Fri - Lunch & Laugh", "Fri - Ghost Stories a la Stone Soup", "Sat - Grand Finale", "Sun - Stories of Grace"]
+    },
+    {
+      "id": 3,
+      "name": "Faye Fulton",
+      "url": "http://www.FayeFulton.com",
+      "bio": "Faye has been a professional speaker, communications trainer, and storyteller for almost two decades. She is a long-standing member of the National Speakers Associa-tion and she has conducted workshops in all 50 states. She grew up in Sicily and Trinidad and has traveled all over the world. Her travels and experiences with differ-ent cultures are reflected in her stories. She tells sto-ries in educational and corporate settings about her ad-ventures and the diverse group of people she has met over the years – from Sicilian Countesses to Trinidadian Chauffeurs. She also makes history come alive when she repre-sents the historic figure of Abigail Adams (wife of the second President of the United States – John Adams).",
+      "avatar": "star.png",
+      "events": ["Fri - High School", "Fri - Friday Night Special", "Sat - Back to the Future", "Sat - Grand Finale"]
+    },
+    {
+      "id": 4,
+      "name": "Martha Reed Johnson",
+      "url": "http://www.MarthaReedJohnson.com",
+      "bio": "Martha is a 2014 World Storytelling Award Recipient for stories featured on her dubut CD, “Skinny Dipping & Other Life Lessons”. She has performed on stages from South Carolina to Maine and is co-host of the monthly “Story Swap” at the Clay Pot Coffee Shop in Florence, SC. Martha creates amazing stories from the ordinary and the not so ordinary moments in life. Her stories will tickle your funny bone and warm your heart. Martha is a member of the South Carolina Sto-rytelling Network and the National Storytelling Net-work.",
+      "avatar": "star.png",
+      "events": ["Fri - Elementary School", "Fri - Friday Night Special", "Sat - Grand Finale"]
+    },
+    {
+      "id": 5,
+      "name": "Madeline Pots",
+      "url": "http://www.MadelinePots.com",
+      "bio": "“My greatest joy is connecting with people through story-telling.” … a simple statement that sums up Madeline’s passion for her work. She has been a featured teller at many of Florida’s festivals including The Florida Storytel-ling Festival, Gamble Rogers Folk Festival and The Cracker Festival. She has performed at the Lowndes Shakespeare Center, The Orlando Museum of Art, Sci-ence Center, History Center and numerous schools and libraries. Madeline was born in Brooklyn, New York. She attended Boston University, New England Conservatory and Dalcroze School of Music. She moved to Florida in 1972 and has been involved in art, music and storytelling ever since.",
+      "avatar": "star.png",
+      "events": ["Fri - Primary School", "Fri - Ghost Stories a la Stone Soup", "Sat - Children Stories", "Sat - Grand Finale"]
+    },
+    {
+      "id": 6,
+      "name": "Robin Schulte",
+      "url": "http://www.RobinSchulte.com",
+      "bio": "Today she travels around Florida performing interactive, theatrical storytelling shows both solo and as half of the tandem team Tales Two Tell. Her repertoire is a lively mix of folktales, literary adaptations and personal sto-ries. Her storytelling is authentic, artfully performed and laced with humor. In October 2014, she won the Story Slam at the National Storytelling Festival. She has been a featured performer at the renowned Florida Storytelling Festival and will perform at the NSN Fringe in Kansas City in July 2015. Her first CD of personal stories is entitled Jack and the Levitator and Other Sto-ries.",
+      "avatar": "star.png",
+      "events": ["Fri- High School", "Fri - Ghost Stories a la Stone Soup", "Sat - Children Stories", "Sat - Grand Finale"]
     }
-
     ],
     "markers": [
       {
