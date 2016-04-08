@@ -9,7 +9,7 @@
       "isThurs": true,
       "time": "6:00-8:30pm",
       "description": "Kick-Off supper and storytelling. $25/person; $45/couple - Limited Seating - Ticket Required",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["dollar", "ticket", "cutlery", "commenting"],
       "storytellers": ["Sheila Arnold Jones", " Tim Tingle", " Martha Reed Johnson", " Faye Fulton", " Madeline Pots", " Robin Schulte"]
     },
     {
@@ -21,7 +21,7 @@
       "isFri": true,
       "time": "9am-6:00pm",
       "description": "Tickets, Registration &  Information available for pick-up or purchase.",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["ticket", "pencil"],
       "storytellers": []
     },
     {
@@ -33,7 +33,7 @@
       "isFri": true,
       "time": "Noon-1:30pm",
       "description": "Lunch and story with 45 minute performance by Tim Tingle. Pre-registration required. Call 864-476-8770. $12/person. For groups of 6 or more $10/person. Ticket Required.",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["dollar", "ticket", "cutlery", "commenting"],
       "storytellers": ["Tim Tingle"]
     },
     {
@@ -45,7 +45,7 @@
       "isFri": true,
       "time": "Noon-5pm",
       "description": "Books, Teller CDs and  Souvenirs available for purchase.",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["shopping-cart"],
       "storytellers": []
     },
     {
@@ -57,7 +57,7 @@
       "isFri": true,
       "time": "6:00-7:00pm",
       "description": "Live storytelling with Karyn Page Davies as Emcee. Free Admission!",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["commenting"],
       "storytellers": ["Faye Fulton", " Martha Reed Johnson"]
     },
     {
@@ -69,7 +69,7 @@
       "isFri": true,
       "time": "7:00-8:00pm",
       "description": "Enjoy dinner in an engaging atmosphere with personal contact with storytellers. Suggested donation $5.",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["cutlery"],
       "storytellers": []
     },
     {
@@ -81,7 +81,7 @@
       "isFri": true,
       "time": "6:00-7:00pm",
       "description": "Live storytelling with Karyn Page Davies as Emcee. Recommended for children 12 years and up. Free Admission!",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["commenting"],
       "storytellers": ["Robin Schulte", " Madeline Pots", " Tim Tingle", " Sheila Arnold Jones"]
     },
     {
@@ -93,7 +93,7 @@
       "isSat": true,
       "time": "9:00am-6:00pm",
       "description": "Tickets, Registration and information available for pick-up or purchase.",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["pencil"],
       "storytellers": []
     },
     {
@@ -105,7 +105,7 @@
       "isSat": true,
       "time": "9:30-5:00pm",
       "description": "Books, Teller Cds, Sourvenirs available for purchase.",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["shopping-cart"],
       "storytellers": []
     },
     {
@@ -117,7 +117,7 @@
       "isSat": true,
       "time": "10:00-11:30am",
       "description": "Abigail Adams and Old Bess in person. Free Admission!",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["commenting"],
       "storytellers": ["Faye Fulton", " Sheila Arnold Jones"]
     },
     {
@@ -129,7 +129,7 @@
       "isSat": true,
       "time": "10:00-11:30am",
       "description": "Engaging stories for children ages 5-12. Free Admission!",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["commenting"],
       "storytellers": ["Madeline Pots", " Robin Schulte"]
     },
     {
@@ -141,7 +141,7 @@
       "isSat": true,
       "time": "11:30am-1:00pm",
       "description": "Hear some fresh new storytellers with some great tales to tell. Emcee - Linda Goodman. Free Admission!",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["commenting"],
       "storytellers": ["Sarah Brady", " L Schuyler Ford", " Michael Ruther", " Judi Tarowsy", " Wanda Violet"]
     },
     {
@@ -153,7 +153,7 @@
       "isSat": true,
       "time": "1:00-2:00pm",
       "description": "Emcee - Cora Newcomb. Open competition for Amateurs. Both Youth and Adults will compete for prizes. Sign up. 7 minute limit. Free Admission!",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["commenting", "trophy"],
       "storytellers": []
     },
     {
@@ -165,7 +165,7 @@
       "isSat": true,
       "time": "2:00-3:30pm",
       "description": "Emcee - Linda Goodman. Round two of fresh new storytellers with some great tales to tell. Free Admission!",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["commenting"],
       "storytellers": ["Lisa Hollingsworth-Segedy", " Rona Leventhal", " Mike Lockett", " Ingrid Nixon", " ?? 2 mystery tellers ??"]
     },
     {
@@ -177,7 +177,7 @@
       "isSat": true,
       "time": "4:00-5:00pm",
       "description": "Emcee - Rodger Ellingwood. Yes, a new champion liar will be crowned. You don't want to miss this. $5 entry fee. Free Admission!",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["commenting", "trophy"],
       "storytellers": []
     },
     {
@@ -189,7 +189,7 @@
       "isSat": true,
       "time": "4:00-5:00pm",
       "description": "Emcee - Suzette Hawkins, President SCSN. Come hear fresh new voices from South Carolina. Free Admission!",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["commenting"],
       "storytellers": ["Wright Clarkson", " Steve Cunningham", " Terri Ingals", " Sherry Lovett", " Elisha Minter", " Marj Pullam"]
     },
     {
@@ -201,7 +201,7 @@
       "isSat": true,
       "time": "7:00-9:00pm",
       "description": "The Grand Daddy of Storytelling at the Stone Soup Festival. All the featured storytellers will be strutting their stuff. Winners of 'Biggest Liar' and 'My Tales' competitions will also be presenting. Snacks available. $8/person or $20/family (2 adults and children under 16).",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["dollar", "cutlery", "commenting"],
       "storytellers": ["All Featured Storytellers", "Winners of 'Biggest Liar' and 'My Tale' Competitions"]
     },
     {
@@ -213,7 +213,7 @@
       "isSat": true,
       "time": "9:30-10:30pm",
       "description": "Time to kick back and enjoy the great spirit of storytelling by swapping tales with new friends over refreshments.",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["cutlery", "wine"],
       "storytellers": []
     },
     {
@@ -225,7 +225,7 @@
       "isSun": true,
       "time": "11:00am-Noon",
       "description": "Worship with a 20-30 minute story sharing time by Tim Tingle. All are welcome. Free Admission!",
-      "icons": ["file1.png", "file2.png"],
+      "icons": ["commenting"],
       "storytellers": ["Tim Tingle"]
     }
   ],
