@@ -1,5 +1,10 @@
 //bootstrap overrides here
-$btn-default-bg: red;
+$body-bg: #fff;
+//$btn-default-bg: red;
+
+$navbar-default-bg: #46298A;
+$navbar-default-link-color: #FFE205;
+$navbar-default-link-hover-color: #EF450D;
 
 @import "bootstrap";
 
@@ -9,8 +14,10 @@ $txt-color: #00010D;
 
 
 //colors
-$color-theme-red: #99341B;
-$color-theme-purple: #46298A;
+$color-theme-red: #99341B; //Prairie Sand
+$color-theme-purple: #46298A; //Minsk
+$color-theme-yellow: #FFE205; //Golden Yellow
+$color-theme-orange: #EF450D; //trinidad
 
 //home box
 $home-container-height: 650px;
@@ -26,6 +33,10 @@ $home-border-length-tip: $home-container-width/2;
 
 
 //Google Map Styles
+
+body {
+  padding: 70px 0;
+}
 
 .g-map-canvas {
   display: inline-block;
@@ -103,6 +114,21 @@ a:hover {
 .navbar-brand {
   padding: 0;
 }
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+}
+
+.body-wrap {
+  padding: 0;
+  margin: 0;
+  @media screen and (min-width: 960px) {
+    padding: 0 70px;
+  }
+}
+
 
 /**********************************
  Home Page
@@ -350,7 +376,7 @@ a.tellers-btn:hover, a.schedule-btn:hover {
 
 .row img {
   display: block;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .row-heading,
