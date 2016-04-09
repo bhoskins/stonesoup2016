@@ -13,13 +13,15 @@ $color-theme-red: #99341B;
 $color-theme-purple: #46298A;
 
 //home box
+$home-container-height: 650px;
+$home-container-width: 764px;
+
 $home-border-width: 50px;
 $home-border-width-tip: $home-border-width/2;
 $home-border-length: 500px;
-$home-border-length-tip: $home-border-length/2;
+$home-border-length-tip: $home-container-width/2;
 
-$home-container-height: 900px;
-$home-container-width: 500px;
+
 
 
 
@@ -96,6 +98,13 @@ a:hover {
 }
 
 /**********************************
+ Application HBS Page
+***********************************/
+.navbar-brand {
+  padding: 0;
+}
+
+/**********************************
  Home Page
 ***********************************/
 
@@ -104,6 +113,7 @@ a:hover {
   width: $home-container-width;
   height: $home-container-height;
   margin: 0 auto;
+  margin-top: -2px;
   padding: 0;
   text-align: center;
 }
@@ -125,10 +135,10 @@ a:hover {
 }
 
 .home-main-img {
-  margin: 50px auto;
+  margin: 30px auto;
   width: 300px;
-  height: 300px;
-  background: url('/assets/images/soldier-icon.jpeg') center center no-repeat;
+  height: 250px;
+  background: url('/assets/images/soldier-icon.png') center center no-repeat;
   background-size: contain;
 }
 
@@ -327,32 +337,51 @@ a.tellers-btn:hover, a.schedule-btn:hover {
 /***********************
   Tellers Page
 *************************/
-.row2 {
-  border-bottom: 2px solid $color-theme-red;
-}
 
 .row {
-  padding: 10px;
+  padding: 20px;
+}
+
+.row2 {
+  border-bottom: 2px solid $color-theme-red;
+  padding: 0;
+  padding-bottom: 20px;
 }
 
 .row img {
-  border: 1px solid lime;
+  display: block;
+  margin: 0 auto;
+}
+
+.row-heading,
+.row-subheading,
+.teller-url {
+  font-weight: bold;
 }
 
 .row-heading,
 .row-subheading {
-  font-weight: bold;
   color: $color-theme-red;
+}
+
+.teller-url {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  color: $color-theme-purple;
+  text-align: center;
 }
 
 .row-heading {
   font-size: 20px;
 }
 
-
-.row-subheading {
+.row-subheading, .teller-url {
   font-size: 18px;
 }
+
+
+
 
 
 

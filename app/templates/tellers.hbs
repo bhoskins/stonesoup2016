@@ -5,42 +5,45 @@
 <hr class="page-heading-line" />
 
 <div class="containter-fluid">
-
   {{#each model as |teller| }}
-
   <div class="row row1">
-    <div class="col-xs-12 col-md-4 col">
+    <div class="col-xs-12 col-md-4 col col1">
       <img src="/assets/images/{{teller.avatar}}">
     </div>
-    <div class="col-xs-12 col-md-8 col">
+
+    <div class="col-xs-12 col-md-8 col col2">
       <span class="row-heading">{{teller.name}}
       </span><br />
       <span class="teller-bio">
         {{teller.bio}}
-      </span><br />
-      <span class="row-subheading teller-url">
-        {{teller.url}}
       </span>
-    </div>
 
+      <div class="appearing-wrap">
+        <span class="row-subheading">Appearing At:</span><br />
+        {{#each teller.events as |event|}}
+          {{event}}<br />
 
+        {{/each}}
+
+      </div><!-- .appearing-wrap -->
+
+    </div><!-- .col -->
   </div><!-- .row -->
 
+
   <div class="row row2">
-    <div class="col-xs-12 col-md-4 col">
-      <span class="row-subheading">Appearing At:</span><br />
-      {{#each teller.events as |event|}}
-        {{event}}<br />
-
-      {{/each}}
-    </div>
-
-    <div class="col-xs-12 col-md-8 col">
-      {{#link-to 'map' class="tellers-btn"}}Map{{/link-to}}
+    <div class="col-xs-12 col-md-4 col col1">
+      <span class="teller-url">
+        <a href="http://www.{{teller.url}}">{{teller.url}}</a>
+      </span>
+    </div><!-- .col -->
+    <div class="col-xs-12 col-md-8 col col2">
+    <div class="links-wrap">
+      {{#link-to 'map' class="tellers-btn map-btn"}}Map{{/link-to}}
       {{#link-to 'schedule' class="schedule-btn"}}Schedule{{/link-to}}
-    </div>
+    </div><!-- .links-wrap -->
 
-
+    </div><!-- .col2 -->
   </div><!-- .row -->
 
   {{/each}}
