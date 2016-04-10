@@ -8,7 +8,8 @@
   {{#each model as |teller| }}
   <div class="row row1">
     <div class="col-xs-12 col-md-5 col col1">
-      <img src="/assets/images/{{teller.avatar}}">
+
+      <img src="/assets/images/{{teller.avatar}}" />
     </div>
 
     <div class="col-xs-12 col-md-7 col col2">
@@ -48,30 +49,7 @@
 
   {{/each}}
 
-<p>/assets/images/star.png</p>
-  <img src="/assets/images/star.png" />
-  <hr />
-
-  <p>assets/images/star.png</p>
-    <img src="assets/images/star.png" />
-    <hr />
-
-    <p>/images/star.png</p>
-      <img src="/images/star.png" />
-      <hr />
-
-      <p>images/star.png</p>
-        <img src="images/star.png" />
-        <hr />
-
-  <p>../assets/images/star.png</p>
-  <img src="../assets/images/star.png" />
-  <hr />
-
-
-
-
-
 </div><!-- .container-fluid -->
+
 
 {{outlet}}
