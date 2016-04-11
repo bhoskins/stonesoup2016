@@ -4,77 +4,199 @@
 
 <hr class="page-heading-line" />
 
-{{#g-map lat=34.74048 lng=-82.03491 zoom=17 options=customOptions as |context| }}
-  {{g-map-marker context lat=34.738936 lng=-82.036902 onClick="markerClick" label="1" title="Main Venue * 132 S. Main St." }}
+{{#g-map markerFitMode='live' lat=34.74048 lng=-82.03491 zoom=zoom options=customOptions as |context| }}
 
-  {{g-map-marker context lat=34.739263 lng=-82.037112 onClick="markerClick" label="2" title="Woodruff Community Center * 116 S. Main St." }}
+  {{#g-map-marker context lat=34.738936 lng=-82.036902 label="1" as |markerContext|  }}
 
-  {{g-map-marker context lat=34.739444 lng=-82.035440 onClick="markerClick" label="3" title="Timrod Library * E. Hayne St." }}
+    {{#g-map-infowindow markerContext class="mainVenue-marker" openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">Main Venue</span><br /> 132 Main St</h3>
+    {{/g-map-infowindow}}
 
-  {{g-map-marker context lat=34.739927 lng=-82.035083 onClick="markerClick" label="4" title="Woodruff Library * 270 E. Hayne St." }}
+  {{/g-map-marker}}
 
-  {{g-map-marker context lat=34.741457 lng=-82.032237 onClick="markerClick" label="5" title="First Presbyterian Church * 360 E. Georgia St." }}
+  {{#g-map-marker context lat=34.739263 lng=-82.037112 label="2" title="Woodruff Community Center" as |markerContext| }}
+    {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">Community Center</span><br /> 116 Main St</h3>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
 
-  {{g-map-marker context lat=34.752512 lng=-82.046206 onClick="markerClick" label="A" title="Tony's Pizza & Subs" }}
+  {{#g-map-marker context lat=34.739444 lng=-82.035440 label="3" title="Timrod Library" as |markerContext| }}
+    {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">Timrod Library</span><br />E. Hayne St</h3>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
 
-  {{g-map-marker context lat=34.751617 lng=-82.046276 onClick="markerClick" label="B" title="McDonalds" }}
+  {{#g-map-marker context lat=34.739927 lng=-82.035083 label="4" title="Woodruff Library" as |markerContext| }}
+    {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">Woodruff Library</span><br />270 E. Hayne St</h3>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
 
-  {{g-map-marker context lat=34.749881 lng=-82.045414 onClick="markerClick" label="C" title="Mr Jalapeno" }}
+  {{#g-map-marker context lat=34.741457 lng=-82.032237  label="5" title="First Presbyterian Church" as |markerContext| }}
+    {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">First Presbyterian Church</span><br />360 E. Georgia St</h3>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
 
-  {{g-map-marker context lat=34.746215 lng=-82.044509 onClick="markerClick" label="D" title="Subway" }}
+  {{#g-map-marker context lat=34.752512 lng=-82.046206  label="A" title="Tony's Pizza & Subs" as |markerContext| }}
+    {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">Tony's Pizza & Subs</span></h3>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
 
-  {{g-map-marker context lat=34.746204 lng=-82.044529 onClick="markerClick" label="E" title="Little Caesars Pizza" }}
+  {{#g-map-marker context lat=34.751617 lng=-82.046276  label="B" title="McDonalds" as |markerContext| }}
+    {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">McDonalds</span></h3>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
 
-  {{g-map-marker context lat=34.742838 lng=-82.040651 onClick="markerClick" label="F" title="Broncos" }}
+  {{#g-map-marker context lat=34.749881 lng=-82.045414  label="C" title="Mr Jalapeno" as |markerContext| }}
+    {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">Mr Jalapeno</span></h3>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
 
-  {{g-map-marker context lat=34.743430 lng=-82.039813 onClick="markerClick" label="G" title="Great Wall of China" }}
+  {{#g-map-marker context lat=34.746225 lng=-82.044510  label="D" title="Subway" as |markerContext| }}
+    {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">Subway</span></h3>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
 
-  {{g-map-marker context lat=34.743547 lng=-82.039980 onClick="markerClick" label="H" title="Friends Cafe" }}
+  {{#g-map-marker context lat=34.746204 lng=-82.044529  label="E" title="Little Caesars Pizza" as |markerContext| }}
+    {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">Little Caesars Pizza</span></h3>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
 
-  {{g-map-marker context lat=34.738232 lng=-82.035665 onClick="markerClick" label="I" title="Burger King" }}
+  {{#g-map-marker context lat=34.742838 lng=-82.040651  label="F" title="Broncos" as |markerContext| }}
+    {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">Broncos</span></h3>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
 
-  {{g-map-marker context lat=34.736445 lng=-82.034585 onClick="markerClick" label="J" title="Zaxbys" }}
+  {{#g-map-marker context lat=34.743430 lng=-82.039813  label="G" title="Great Wall of China" as |markerContext| }}
+    {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">Great Wall of China</span></h3>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
 
-  {{g-map-marker context lat=34.734550 lng=-82.029339 onClick="markerClick" label="K" title="Pizza Hut" }}
+  {{#g-map-marker context lat=34.743547 lng=-82.039980  label="H" title="Friends Cafe" as |markerContext| }}
+    {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">Friends Cafe</span></h3>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
 
-  {{g-map-marker context lat=34.734496 lng=-82.028852 onClick="markerClick" label="L" title="Demeter's" }}
+  {{#g-map-marker context lat=34.738232 lng=-82.035665  label="N" title="Burger King" as |markerContext| }}
+    {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">Burger King</span></h3>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
 
-  {{g-map-marker context lat=34.733251 lng=-82.026519 onClick="markerClick" label="M" title="Pete's Drive-in" }}
+  {{#g-map-marker context lat=34.736445 lng=-82.034585  label="J" title="Zaxbys" as |markerContext| }}
+    {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">Zaxbys</span></h3>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
 
-  {{g-map-marker context lat=34.732807 lng=-82.026611 onClick="markerClick" label="N" title="Roma's" }}
+  {{#g-map-marker context lat=34.734550 lng=-82.029339  label="K" title="Pizza Hut" as |markerContext| }}
+    {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">Pizza Hut</span></h3>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
+
+  {{#g-map-marker context lat=34.734496 lng=-82.028852   label="L" title="Demeter's" as |markerContext| }}
+    {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">Demeter's</span></h3>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
+
+  {{#g-map-marker context lat=34.733251 lng=-82.026519   label="M" title="Pete's Drive-in" as |markerContext| }}
+    {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">Pete's Drive-in</span></h3>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
+
+  {{#g-map-marker context lat=34.732807 lng=-82.026611 label="I" title="Roma's" as |markerContext| }}
+    {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+      <h3><span class="infowindow-heading red-emphasis">Roma's</span></h3>
+    {{/g-map-infowindow}}
+  {{/g-map-marker}}
+
+  <!--  g-map-route
+  {{g-map-route context
+    travelMode='walking' strokeColor='#46298A'
+    originLat=34.741457 originLng=-82.032237
+    destinationLat=34.732807 destinationLng=-82.026611}}
+
+  {{g-map-route context
+    travelMode='driving' strokeColor='blue'
+    originLat=34.741457 originLng=-82.032237
+    destinationLat=34.732807 destinationLng=-82.026611}}
+    -->
 
 {{/g-map}}
 
-<div class="map-legend">
-  <h2>Venues</h2>
-  <ol class="venue-list">
-    <li>Main Storytelling Venue (132 S. Main St.)</li>
-    <li>Woodruff Community Center (116 S. Main St.)</li>
-    <li>Timrod Library (East Hayne St.)</li>
-    <li>Woodruff Library (270 E. Hayne St.)</li>
-    <li>First Presbyterian (360 E. Georgia St.)</li>
-  </ol>
-
-  <h2>Restaurants</h2>
-    <ol type="A" class="food-list">
-      <li>Tony's Pizza & Subs</li>
-      <li>McDonalds</li>
-      <li>Mr. Jalapeno (Mexican)</li>
-      <li>Subway</li>
-      <li>Little Caesars Pizza</li>
-      <li>Broncos (Mexican)</li>
-      <li>Great Wall of China</li>
-      <li>Friends Cafe (Breakfast/Burgers)</li>
-      <li>Burger King</li>
-      <li>Zaxbys</li>
-      <li>Pizza Hut</li>
-      <li>Demeters (Greek/Subs/Salads/Pizza)</li>
-      <li>Pete's Drive-in (Fast Food)</li>
-      <li>Roma's (Meat & 2/Sandwiches/Salads)</li>
 
 
 
-    </ol>
+
+
+
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Venues
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <div class="venue-list">
+          <ol>
+            <li {{action 'showMainVenue'}}>Main Storytelling Venue</li>
+            <li>Woodruff Community Center</li>
+            <li>Timrod Library</li>
+            <li>Woodruff Library</li>
+            <li {{action 'showFirstPres'}}>First Presbyterian</li>
+          </ol>
+        </div><!-- .venue-list -->
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Restaurants
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <div class="food-list">
+            <ol type="A" class="food-list">
+              <li>Tony's Pizza & Subs</li>
+              <li>McDonalds</li>
+              <li>Mr. Jalapeno</li>
+              <li>Subway</li>
+              <li>Little Caesars Pizza</li>
+              <li>Broncos</li>
+              <li>Great Wall of China</li>
+              <li>Friends Cafe</li>
+              <li>Roma's</li>
+              <li>Zaxbys</li>
+              <li>Pizza Hut</li>
+              <li>Demeters</li>
+              <li>Pete's Drive-in</li>
+              <li>Burger King</li>
+            </ol>
+          </div><!-- .food-list -->
+      </div>
+    </div>
+  </div>
 </div>
 
 {{outlet}}

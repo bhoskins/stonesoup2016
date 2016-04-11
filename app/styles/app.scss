@@ -30,10 +30,9 @@ $home-border-length-tip: $home-container-width/2;
 
 $home-img-margin-top-bottom: 6%; //50px;
 
-
-
-//Google Map Styles
-
+/**********************************
+ Page Styles
+***********************************/
 body {
   padding: 70px 0;
 }
@@ -43,24 +42,6 @@ body {
   //@media screen and (max-width: 768px) {
    // padding-top: 216px;
   //}
-}
-
-.g-map-canvas {
-  display: inline-block;
-  width: 73%;
-  height: 400px;
-}
-
-.map-legend ol {
-  text-decoration: none;
-  padding: 0;
-  padding-left: 20px;
-
-}
-
-.map-legend {
-  display: inline-block;
-  width: 25%;
 }
 
 .red-emphasis,
@@ -76,7 +57,6 @@ body {
   color: $color-theme-purple;
 }
 
-//Page Styles
 .page-container {
   width: 960px;
   height: 2000px;
@@ -127,6 +107,63 @@ a:hover {
   border: 0;
   background: $color-theme-red;
 }
+
+/**********************************
+ Map Page
+***********************************/
+
+.g-map-canvas {
+  display: inline-block;
+  width: 100%;
+  height: 400px;
+}
+
+.map-legend ol {
+  text-decoration: none;
+  padding: 0;
+  padding-left: 20px;
+
+}
+
+.map-legend {
+  display: inline-block;
+  width: 100%;
+}
+
+.venue-list,
+.food-list {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+}
+
+.infowindow-heading {
+  font-size: 16px;
+}
+
+.mainvenue-marker {
+  border: 3px solid lime;
+}
+
+.map-accordion-wrap {
+  //position: absolute;
+  //right: 0;
+  //top: 0;
+  width: 200px;
+  padding: 2px;
+}
+
+.map-accordion-wrap li,
+.map-accordion-wrap ol {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+
+
+
+
 
 /**********************************
  Application HBS Page
