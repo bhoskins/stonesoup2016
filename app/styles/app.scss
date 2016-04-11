@@ -20,7 +20,7 @@ $color-theme-yellow: #FFE205; //Golden Yellow
 $color-theme-orange: #EF450D; //trinidad
 
 //home box
-$home-container-height: 650px;
+$home-container-height: 700px;
 $home-container-width: 764px;
 
 $home-border-width: 50px;
@@ -28,7 +28,7 @@ $home-border-width-tip: $home-border-width/2;
 $home-border-length: 500px;
 $home-border-length-tip: $home-container-width/2;
 
-
+$home-img-margin-top-bottom: 6%; //50px;
 
 
 
@@ -36,6 +36,13 @@ $home-border-length-tip: $home-container-width/2;
 
 body {
   padding: 70px 0;
+}
+
+.container-all {
+  //padding-top: 216px;
+  //@media screen and (max-width: 768px) {
+   // padding-top: 216px;
+  //}
 }
 
 .g-map-canvas {
@@ -54,6 +61,19 @@ body {
 .map-legend {
   display: inline-block;
   width: 25%;
+}
+
+.red-emphasis,
+.purple-emphasis {
+  font-weight: bold;
+}
+
+.red-emphasis {
+  color: $color-theme-red;
+}
+
+.purple-emphasis {
+  color: $color-theme-purple;
 }
 
 //Page Styles
@@ -161,7 +181,7 @@ a:hover {
 }
 
 .home-main-img {
-  margin: 30px auto;
+  margin: $home-img-margin-top-bottom auto;
   width: 300px;
   height: 250px;
   background: url('/assets/images/soldier-icon.png') center center no-repeat;
@@ -307,7 +327,8 @@ a:hover {
   text-align: left;
 }
 
-.featured-tellers-emphasis {
+.featured-tellers-emphasis,
+.purple-emphasis {
   color: $color-theme-purple;
   font-weight: bold;
 }
