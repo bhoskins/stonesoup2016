@@ -127,59 +127,8 @@ a:hover {
   padding: 0 5px;
 }
 
-/**********************************
- Map Page
-***********************************/
-.page-header-map,
-.page-heading-line-map {
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-}
-.g-map-canvas {
-  @media screen and (max-width: 768px) {
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-  }
-  display: inline-block;
-  width: 100%;
-  height: 400px;
-}
-
-.venue-list,
-.food-list {
-  display: inline-block;
-  width: 100%;
-  vertical-align: top;
-  @media screen and (max-width: 768px) {
-    width: 100%;
-  }
-}
-
-.venue-list li,
-.food-list li {
-  @media screen and (max-width: 768px) {
-    font-size: 12px;
-    font-weight: 7;
-  }
-}
-
-.infowindow-heading {
-  font-size: 16px;
-}
-
-.accordion-legend {
-  @media screen and (max-width: 768px) {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 70px;
-  }
-}
-
-.map-ol {
-  padding: 5px;
+.panel {
+  margin-bottom: 0;
 }
 
 
@@ -210,15 +159,15 @@ a:hover {
 
 
 /**********************************
- Home Page
+ Home/Index Page
 ***********************************/
 
-.container {
+.container-index-page {
   position: relative;
   width: $home-container-width;
   height: $home-container-height;
   margin: 0 auto;
-  margin-top: -2px;
+  margin-top: 30px;
   padding: 0;
   text-align: center;
 }
@@ -311,6 +260,13 @@ a:hover {
   border-left: $home-border-length-tip solid $color-theme-red;
   border-top: $home-border-width-tip solid transparent;
   z-index: 5;
+}
+
+/***********************
+  About Page
+*************************/
+.panel-abouts .panel-body {
+  text-align: left;
 }
 
 /***********************
@@ -436,21 +392,6 @@ a.tellers-btn:hover, a.schedule-btn:hover {
 }
 
 /***********************
-  About Page
-*************************/
-.panel-abouts .panel-body {
-  text-align: left;
-}
-
-/***********************
-  Contact Page
-*************************/
-
-.panel-contact .panel-body {
-  text-align: left;
-}
-
-/***********************
   Tellers Page
 *************************/
 
@@ -517,6 +458,69 @@ a.tellers-btn:hover, a.schedule-btn:hover {
 
 .schedule-btn {
   float: right;
+}
+
+/**********************************
+ Map Page
+***********************************/
+.page-header-map,
+.page-heading-line-map {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.g-map-canvas {
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
+  display: inline-block;
+  width: 100%;
+  height: 400px;
+}
+
+.venue-list,
+.food-list {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.venue-list li,
+.food-list li {
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    font-weight: 7;
+  }
+}
+
+.infowindow-heading {
+  font-size: 16px;
+}
+
+.accordion-legend {
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 70px;
+  }
+}
+
+.map-ol {
+  padding: 5px;
+}
+
+/***********************
+  Contact Page
+*************************/
+
+.panel-contact .panel-body {
+  text-align: left;
 }
 
 
