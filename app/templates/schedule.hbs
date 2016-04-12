@@ -48,18 +48,21 @@
         </h4>
       </div><!-- .panel-heading -->
 
-      <div id="{{event.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-        <div class="panel-body">
+      <div id="{{event.id}}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body panel-body-schedule">
+          <div class="event-location purple-emphasis">
+            {{event.location}}
+          </div>
           <div class="event-description">
             {{event.description}}
           </div>
           {{#if event.storytellers}}
-          <div class="featured-tellers">
-            <h3 class="featured-tellers-txt">
-              <span class="featured-tellers-emphasis">Featured Storytellers:</span>
-            </h3>
-            <h3>{{event.storytellers}}</h3>
-          </div>
+            <div class="featured-tellers">
+                <span class="featured-tellers-emphasis">Featured Storytellers:</span>
+            </div><!-- .featured-tellers -->
+            <div class="tellers-list">
+              <h3>{{event.storytellers}}</h3>
+           </div>
           {{/if}}
           <div>
             {{#link-to 'map' class="tellers-btn"}}Map{{/link-to}}
@@ -82,7 +85,8 @@
 
   <div class="panel-group" id="accordionFri" role="tablist" aria-multiselectable="true">
 
-  {{#each model as |event| }}
+  {{#each model as |event index| }}
+
   {{#if event.isFri}}
 
     <div class="panel panel-default">
@@ -92,7 +96,7 @@
             data-toggle="collapse"
             data-parent="#accordionFri"
             href="#{{event.id}}"
-            aria-expanded="true"
+            aria-expanded="false"
             aria-controls="{{event.id}}">
               <div class="schedule-event-time">
                 <span class="event-title-txt">
@@ -115,15 +119,19 @@
       </div><!-- .panel-heading -->
 
       <div id="{{event.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-        <div class="panel-body">
+
+        <div class="panel-body panel-body-schedule">
+        <div class="event-location purple-emphasis">
+          {{event.location}}
+        </div>
           {{event.description}}
 
           {{#if event.storytellers}}
-          <div class="featured-tellers">
-            <h3 class="featured-tellers-txt">
-              <span class="featured-tellers-emphasis">Featured Storytellers:</span>
-            </h3>
-            <h3>{{event.storytellers}}</h3>
+           <div class="featured-tellers">
+               <span class="featured-tellers-emphasis">Featured Storytellers:</span>
+           </div><!-- .featured-tellers -->
+           <div class="tellers-list">
+             <h3>{{event.storytellers}}</h3>
           </div>
           {{/if}}
           <div class="schedule-btns-div">
@@ -156,7 +164,7 @@
             data-toggle="collapse"
             data-parent="#accordionSat"
             href="#{{event.id}}"
-            aria-expanded="true"
+            aria-expanded="false"
             aria-controls="{{event.id}}">
               <div class="schedule-event-time">
               <span class="event-title-txt">
@@ -179,15 +187,18 @@
       </div><!-- .panel-heading -->
 
       <div id="{{event.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-        <div class="panel-body">
+        <div class="panel-body panel-body-schedule">
+        <div class="event-location purple-emphasis">
+          {{event.location}}
+        </div>
           {{event.description}}
 
           {{#if event.storytellers}}
-          <div class="featured-tellers">
-            <h3 class="featured-tellers-txt">
-              <span class="featured-tellers-emphasis">Featured Storytellers:</span>
-            </h3>
-            <h3>{{event.storytellers}}</h3>
+           <div class="featured-tellers">
+               <span class="featured-tellers-emphasis">Featured Storytellers:</span>
+           </div><!-- .featured-tellers -->
+           <div class="tellers-list">
+             <h3>{{event.storytellers}}</h3>
           </div>
           {{/if}}
           <div class="schedule-btns-div">
@@ -220,13 +231,13 @@
             data-toggle="collapse"
             data-parent="#accordionSun"
             href="#{{event.id}}"
-            aria-expanded="true"
+            aria-expanded="false"
             aria-controls="{{event.id}}">
               <div class="schedule-event-time">
               <span class="event-title-txt">
               {{event.time}}</span> <br />
               {{#each event.icons as |icon|}}
-              {{fa-icon icon}}
+              <span class="event-icons">{{fa-icon icon}}</span>
               {{/each}}
               </div><!-- .schedule-event-time -->
               <div class="schedule-event-title" >
@@ -241,15 +252,18 @@
       </div><!-- .panel-heading -->
 
       <div id="{{event.id}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-        <div class="panel-body">
+        <div class="panel-body panel-body-schedule">
+        <div class="event-location purple-emphasis">
+          {{event.location}}
+        </div>
           {{event.description}}
 
           {{#if event.storytellers}}
-          <div class="featured-tellers">
-            <h3 class="featured-tellers-txt">
-              <span class="featured-tellers-emphasis">Featured Storytellers:</span>
-            </h3>
-            <h3>{{event.storytellers}}</h3>
+           <div class="featured-tellers">
+               <span class="featured-tellers-emphasis">Featured Storytellers:</span>
+           </div><!-- .featured-tellers -->
+           <div class="tellers-list">
+             <h3>{{event.storytellers}}</h3>
           </div>
           {{/if}}
           <div class="schedule-btns-div">

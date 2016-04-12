@@ -108,6 +108,12 @@ a:hover {
   background: $color-theme-red;
 }
 
+.page-heading-txt {
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
+}
+
 /**********************************
  Map Page
 ***********************************/
@@ -298,6 +304,9 @@ a:hover {
   border-bottom: 1px solid $color-theme-red;
 }
 .accordion-day-txt {
+  @media screen and (min-width: 768px){
+    font-size: 22px;
+  }
   color: $color-theme-purple;
   font-size: 20px;
   font-weight: bold;
@@ -311,7 +320,6 @@ a:hover {
   height: 60px;
   padding: 5px;
 }
-
 
 .panel-heading {
   position: relative;
@@ -342,11 +350,14 @@ a:hover {
   -o-transform: translateY(-50%);
 }
 
-.panel-body {
-  text-align: center;
+.panel-body-schedule {
+  //text-align: center;
 }
 
 .event-title-txt {
+  @media screen and (max-width: 768px){
+    font-size: 18px;
+  }
   font-size: 20px;
   font-weight: bold;
 }
@@ -354,14 +365,11 @@ a:hover {
 .event-icons {
   font-size: 18px;
   color: #272822;
+  margin: 0 2px;
 }
 
 .event-location {
   color: #272822
-}
-
-.featured-tellers-txt {
-  text-align: left;
 }
 
 .featured-tellers-emphasis,
@@ -370,9 +378,16 @@ a:hover {
   font-weight: bold;
 }
 
-.featured-tellers h3 {
-  display: inline-block;
+.featured-tellers {
+  margin-top: 10px;
 }
+
+.tellers-list h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
 
 /***************************
   Buttons

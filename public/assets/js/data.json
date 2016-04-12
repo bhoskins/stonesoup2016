@@ -14,7 +14,7 @@
     },
     {
       "id": 2,
-      "title": "On-Site Registration and Information",
+      "title": "Registration & Info",
       "location": "132 Main St & 116 Main St",
       "location-name": "Main Venue & Community Center",
       "day": "Friday",
@@ -26,7 +26,7 @@
     },
     {
       "id": 3,
-      "title": "Lunch and Laugh",
+      "title": "Lunch & Laugh",
       "location": "132 Main St",
       "location-name": "Main Venue",
       "day": "Friday",
@@ -74,7 +74,7 @@
     },
     {
       "id": 7,
-      "title": "Ghost Stories a la Stone Soup",
+      "title": "Ghost Stories",
       "location": "132 Main St",
       "location-name": "Main Venue",
       "day": "Friday",
@@ -86,7 +86,7 @@
     },
     {
       "id": 8,
-      "title": "Storytelling Registation and Info",
+      "title": "Registation & Info",
       "location": "132 Main & 116 S. Main",
       "location-name": "Main Venue & Community Center",
       "day": "Saturday",
@@ -122,7 +122,7 @@
     },
     {
       "id": 11,
-      "title": "What will you learn today? Children's Stories",
+      "title": "Children's Stories",
       "location": "234 E Hayne",
       "location-name": "Woodruff Library",
       "day": "Saturday",
@@ -146,7 +146,7 @@
     },
     {
       "id": 13,
-      "title": "'My Tale' Story Competition",
+      "title": "'My Tale' Competition",
       "location": "116 S Main St",
       "location-name": "Community Center",
       "day": "Saturday",
@@ -194,7 +194,7 @@
     },
     {
       "id": 17,
-      "title": "'Tell It All' The Grand Finale",
+      "title": "'Tell It All' Grand Finale",
       "location": "132 S Main St",
       "location-name": "Main Venue",
       "day": "Saturday",
@@ -206,7 +206,7 @@
     },
     {
       "id": 18,
-      "title": "Time Well Spent - After Party",
+      "title": "TWS - After Party",
       "location": "132 S Main St",
       "location-name": "Main Venue",
       "day": "Saturday",
