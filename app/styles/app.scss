@@ -33,8 +33,20 @@ $home-img-margin-top-bottom: 6%; //50px;
 /**********************************
  Page Styles
 ***********************************/
+html, body {
+  height: 100%;
+  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
 body {
-  padding: 70px 0;
+  padding: 50px 0;
+}
+
+.container-fluid,
+.container-all {
+  padding: 0;
 }
 
 .container-all {
@@ -112,58 +124,62 @@ a:hover {
   @media screen and (max-width: 768px) {
     font-size: 30px;
   }
+  padding: 0 5px;
 }
 
 /**********************************
  Map Page
 ***********************************/
-
+.page-header-map,
+.page-heading-line-map {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
 .g-map-canvas {
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
   display: inline-block;
   width: 100%;
   height: 400px;
 }
 
-.map-legend ol {
-  text-decoration: none;
-  padding: 0;
-  padding-left: 20px;
-
-}
-
-.map-legend {
-  display: inline-block;
-  width: 100%;
-}
-
 .venue-list,
 .food-list {
   display: inline-block;
-  width: 48%;
+  width: 100%;
   vertical-align: top;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.venue-list li,
+.food-list li {
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    font-weight: 7;
+  }
 }
 
 .infowindow-heading {
   font-size: 16px;
 }
 
-.mainvenue-marker {
-  border: 3px solid lime;
+.accordion-legend {
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 70px;
+  }
 }
 
-.map-accordion-wrap {
-  //position: absolute;
-  //right: 0;
-  //top: 0;
-  width: 200px;
-  padding: 2px;
-}
-
-.map-accordion-wrap li,
-.map-accordion-wrap ol {
-  padding: 0;
-  margin: 0;
-  text-align: left;
+.map-ol {
+  padding: 5px;
 }
 
 
@@ -310,6 +326,7 @@ a:hover {
   color: $color-theme-purple;
   font-size: 20px;
   font-weight: bold;
+  padding: 0 5px;
 }
 
 .small {
@@ -439,6 +456,7 @@ a.tellers-btn:hover, a.schedule-btn:hover {
 
 .row {
   padding: 20px;
+  padding-bottom: 10px;
 }
 
 .row2 {
@@ -473,10 +491,32 @@ a.tellers-btn:hover, a.schedule-btn:hover {
 
 .row-heading {
   font-size: 20px;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    margin: 5px 0;
+  }
 }
 
 .row-subheading, .teller-url {
   font-size: 18px;
+}
+
+.col img {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.links-wrap {
+  width: 210px;
+  margin: 0 auto;
+}
+
+.map-btn {
+  float: left;
+}
+
+.schedule-btn {
+  float: right;
 }
 
 
