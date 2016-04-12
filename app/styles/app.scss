@@ -40,20 +40,20 @@ html, body {
   width: 100vw;
   margin: 0;
 }
+
+html {
+  background: url('/assets/images/pixel_weave.png') top left;
+  background-repeat: repeat;
+}
 body {
   padding: 50px 0;
+  background: url('/assets/images/pixel_weave.png') top left;
+  background-repeat: repeat;
 }
 
 .container-fluid,
 .container-all {
   padding: 0;
-}
-
-.container-all {
-  //padding-top: 216px;
-  //@media screen and (max-width: 768px) {
-   // padding-top: 216px;
-  //}
 }
 
 .red-emphasis,
@@ -131,11 +131,6 @@ a:hover {
   margin-bottom: 0;
 }
 
-
-
-
-
-
 /**********************************
  Application HBS Page
 ***********************************/
@@ -157,7 +152,6 @@ a:hover {
   }
 }
 
-
 /**********************************
  Home/Index Page
 ***********************************/
@@ -170,6 +164,7 @@ a:hover {
   margin-top: 30px;
   padding: 0;
   text-align: center;
+  background: #fff;
 }
 
 .home-top-txt {
@@ -289,7 +284,7 @@ a:hover {
   color: white;
 }
 
-#headingOne {
+#headingSchedule {
   height: 60px;
   padding: 5px;
 }
@@ -502,8 +497,24 @@ a.tellers-btn:hover, a.schedule-btn:hover {
   font-size: 16px;
 }
 
+.panel-venues,
+.panel-food {
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+  }
+}
+
+.panel-venues {
+  @media screen and (min-width: 768px) {
+    margin-right: 1%;
+  }
+}
+
+
 .accordion-legend {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     position: absolute;
     top: 0;
     right: 0;
@@ -522,15 +533,6 @@ a.tellers-btn:hover, a.schedule-btn:hover {
 .panel-contact .panel-body {
   text-align: left;
 }
-
-
-
-
-
-
-
-
-
 
 
 
