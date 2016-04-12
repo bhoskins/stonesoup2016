@@ -42,7 +42,7 @@ html, body {
 }
 
 body {
-  padding: 50px 0;
+  padding: 0;
   background: url('/assets/images/pixel_weave.png') top left;
   background-repeat: repeat;
 }
@@ -50,6 +50,9 @@ body {
 .container-fluid,
 .container-all {
   padding: 0;
+  @media screen and (max-width: 768px) {
+    background: #fff;
+  }
 }
 
 .red-emphasis,
@@ -140,6 +143,14 @@ a:hover {
 ***********************************/
 .navbar-brand {
   padding: 0;
+}
+
+.navbar {
+  margin: 0;
+}
+
+.navbar-header {
+  background: $color-theme-purple;
 }
 
 .container-fluid {
