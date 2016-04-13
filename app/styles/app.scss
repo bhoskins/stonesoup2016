@@ -73,9 +73,16 @@ body {
   height: 2000px;
   margin: 0 auto;
   padding: 0;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 h3 {
   font-size: 14px;
+}
+
+h1 {
+  margin-top: 0;
 }
 
 a, a:visited, a:link, a:active {
@@ -123,7 +130,8 @@ a:hover {
   @media screen and (max-width: 768px) {
     font-size: 30px;
   }
-  padding: 0 5px;
+  padding: 0 15px;
+  padding-top: 30px;
 }
 
 .panel {
@@ -133,9 +141,9 @@ a:hover {
 #bs-example-navbar-collapse-1 {
   padding-left: 10%;
   font-size: 16px;
-  //text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
+  background: $color-theme-purple;
 }
 
 /**********************************
@@ -157,13 +165,21 @@ a:hover {
   margin-right: auto;
   margin-left: auto;
   max-width: 960px;
+  //background: #fff;
+  @media screen and (max-width: 768px)
+  {
+    background: #fff;
+    width: 100%;
+  }
 }
 
 .body-wrap {
   padding: 0;
+  padding-bottom: 30px;
   margin: 0;
   @media screen and (min-width: 960px) {
-    padding: 0 70px;
+   // padding: 0 70px;
+    background: #fff;
   }
 }
 
@@ -176,15 +192,22 @@ a:hover {
   width: $home-container-width;
   height: $home-container-height;
   margin: 0 auto;
-  margin-top: 30px;
   padding: 0;
+  padding-top: 30px;
   text-align: center;
   background: #fff;
+  @media screen and (max-width: 768px) {
+    padding-top: 0;
+    width: 100%;
+  }
 }
 
 .home-top-txt {
   text-align: center;
   margin-top: ($home-border-width + 10px);
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 .home-line {
@@ -196,6 +219,9 @@ a:hover {
 
 .home-main-txt {
   text-align: center;
+  @media screen and (max-width: 768px) {
+    font-size: 22px;
+  }
 }
 
 .home-main-img {
@@ -204,6 +230,9 @@ a:hover {
   height: 250px;
   background: url('/assets/images/soldier-icon.png') center center no-repeat;
   background-size: contain;
+  @media screen and (max-width: 768px) {
+    width: 160px;
+  }
 }
 
 .home-ss-link {
@@ -241,28 +270,34 @@ a:hover {
 
 .bottom-arrow-right {
   position: absolute;
-  bottom: 0;
+  bottom: -30px;
   width: 0;
   height: 0;
   text-indent: -9999px;
   border-left: $home-container-width solid $color-theme-red;
   border-top: $home-border-width solid transparent;
+  @media screen and (max-width: 768px) {
+    bottom: 0;
+  }
 }
 
 .top-arrow-left {
   position: absolute;
-  top: 0;
+  top: 30px;
   width: 0;
   height: 0;
   text-indent: -9999px;
   border-right: $home-container-width solid $color-theme-red;
   border-bottom: $home-border-width solid transparent;
-  z-index: 3
+  z-index: 3;
+  @media screen and (max-width: 768px) {
+    top: 0;
+  }
 }
 
 .bottom-arrow-tip-left {
   position: absolute;
-  bottom: 0;
+  bottom: -30px;
   right: 0;
   width: 0;
   height: 0;
@@ -270,6 +305,9 @@ a:hover {
   border-left: $home-border-length-tip solid $color-theme-red;
   border-top: $home-border-width-tip solid transparent;
   z-index: 5;
+  @media screen and (max-width: 768px) {
+    bottom: 0;
+  }
 }
 
 /***********************
@@ -292,7 +330,7 @@ a:hover {
   color: $color-theme-purple;
   font-size: 20px;
   font-weight: bold;
-  padding: 0 5px;
+  padding: 0 15px;
 }
 
 .small {
@@ -301,11 +339,12 @@ a:hover {
 
 #headingSchedule {
   height: 60px;
-  padding: 5px;
+  padding: 5px 15px;
 }
 
 .panel-heading {
   position: relative;
+  padding: 5px 15px;
 }
 .schedule-event-time, .schedule-event-title {
   position: absolute;
@@ -313,7 +352,7 @@ a:hover {
 }
 
 .schedule-event-time {
-  left: 5px;
+  left: 15px;
   top: 50%;
   //color: #272822;
   transform: translateY(-50%);
@@ -323,7 +362,7 @@ a:hover {
 }
 
 .schedule-event-title {
-  right: 5px;
+  right: 15px;
   text-align: right;
   top: 50%;
   //color: #272822;

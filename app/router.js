@@ -7,13 +7,13 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('index', {path: '/'});
-  this.route('about');
-  this.route('schedule');
+  this.route('about', { path: '/about'});
+  this.route('schedule', { path: '/schedule'});
   this.route('event', { path: '/schedule/:event_id'});
-  this.route('map');
-  this.route('tellers');
+  this.route('map', { path: '/map'});
+  this.route('tellers', { path: '/tellers'});
   this.route('teller', { path: '/tellers/:teller_id'});
-  this.route('contact');
+  this.route('contact', { path: '/contact'});
 });
 
 export default Router;
