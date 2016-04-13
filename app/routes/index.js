@@ -4,7 +4,7 @@ export default Ember.Route.extend({
   renderTemplate: function() {
     var height = Ember.$(window).height();
     var cssHeight = height + "px";
-    var width = Ember.$(document).width();
+    var width = Ember.$(window).width();
     var cssWidth = width + "px";
     var borderWidth = "50px";
 

@@ -179,7 +179,7 @@ a:hover {
   margin: 0;
   @media screen and (min-width: 960px) {
    // padding: 0 70px;
-    background: #fff;
+    //background: #fff;
   }
 }
 
@@ -193,45 +193,95 @@ a:hover {
   height: $home-container-height;
   margin: 0 auto;
   padding: 0;
-  padding-top: 30px;
+  margin-top: 30px;
   text-align: center;
   background: #fff;
-  @media screen and (max-width: 768px) {
-    padding-top: 0;
+  @media screen and (max-width: 767px) {
+    margin-top: 0;
     width: 100%;
+    height: 100%;
+    height: 100vh;
+    border-top: 25px solid $color-theme-red;
+    border-right: 25px solid $color-theme-purple;
+    border-bottom: 25px solid $color-theme-red;
+    border-left: 25px solid $color-theme-purple;
   }
 }
 
+.index1-wrap {
+  height: 15vh;
+}
+
+.index2-wrap {
+  height: 22vh;
+}
+
+.index4-wrap {
+  display: block;
+  height: 25vh;
+}
+
+.index3-wrap {
+  height: 60vh;
+}
+
+.index2-wrap,
+.index4-wrap {
+  padding-top: 20px;
+}
+
 .home-top-txt {
+  font-style: italic;
   text-align: center;
-  margin-top: ($home-border-width + 10px);
-  @media screen and (max-width: 768px) {
+  padding-top: ($home-border-width + 10px);
+  @media screen and (max-width: 767px) {
     font-size: 12px;
+    padding-top: 25px;
+  }
+}
+
+.line-break {
+  @media screen and (min-width: 767px) {
+    display: none;
   }
 }
 
 .home-line {
   height: 10px;
-  width: 75%;
+  width: 65%;
   border: 0;
   box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.5);
+  padding: 0;
+  margin: 15px auto;
 }
 
 .home-main-txt {
   text-align: center;
-  @media screen and (max-width: 768px) {
+  padding: 0;
+  @media screen and (max-width: 767px) {
     font-size: 22px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+    //margin-top: 15px;
   }
 }
 
 .home-main-img {
-  margin: $home-img-margin-top-bottom auto;
+  margin: 0 auto;
+  //$home-img-margin-top-bottom auto;
   width: 300px;
   height: 250px;
   background: url('/assets/images/soldier-icon.png') center center no-repeat;
   background-size: contain;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     width: 160px;
+    height: 220px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 130px;
+    height: 200px;
+    margin: 0 auto;
   }
 }
 
@@ -255,6 +305,10 @@ a:hover {
   border-bottom: $home-container-height solid $color-theme-purple;
   border-left: $home-border-width solid transparent;
   z-index: 4;
+  @media screen and (max-width: 767px) {
+    display: none;
+    border-bottom: 100vh;
+  }
 }
 
 .left-arrow-down {
@@ -266,24 +320,30 @@ a:hover {
   border-top: $home-container-height solid $color-theme-purple;
   border-right: $home-border-width solid transparent;
   z-index: 2;
+  @media screen and (max-width: 767px) {
+    display: none;
+    border-top: 100vh;
+  }
 }
 
 .bottom-arrow-right {
   position: absolute;
-  bottom: -30px;
+  bottom: 0;
   width: 0;
   height: 0;
   text-indent: -9999px;
   border-left: $home-container-width solid $color-theme-red;
   border-top: $home-border-width solid transparent;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
+    display: none;
     bottom: 0;
+    border-left: 100%;
   }
 }
 
 .top-arrow-left {
   position: absolute;
-  top: 30px;
+  top: 0;
   width: 0;
   height: 0;
   text-indent: -9999px;
@@ -291,13 +351,15 @@ a:hover {
   border-bottom: $home-border-width solid transparent;
   z-index: 3;
   @media screen and (max-width: 768px) {
+    display: none;
     top: 0;
+    border-right: 100%;
   }
 }
 
 .bottom-arrow-tip-left {
   position: absolute;
-  bottom: -30px;
+  bottom: 0;
   right: 0;
   width: 0;
   height: 0;
@@ -305,7 +367,8 @@ a:hover {
   border-left: $home-border-length-tip solid $color-theme-red;
   border-top: $home-border-width-tip solid transparent;
   z-index: 5;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
+    display: none;
     bottom: 0;
   }
 }

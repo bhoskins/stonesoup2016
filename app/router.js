@@ -16,4 +16,10 @@ Router.map(function() {
   this.route('contact', { path: '/contact'});
 });
 
+/*
+App.Router.reopen({
+  location: 'auto'
+});
+*/
+
 export default Router;
