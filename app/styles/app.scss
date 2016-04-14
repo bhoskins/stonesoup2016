@@ -175,11 +175,9 @@ a:hover {
 
 .body-wrap {
   padding: 0;
-  padding-bottom: 30px;
   margin: 0;
   @media screen and (min-width: 960px) {
-   // padding: 0 70px;
-    //background: #fff;
+    padding-bottom: 30px;
   }
 }
 
@@ -196,7 +194,7 @@ a:hover {
   margin-top: 30px;
   text-align: center;
   background: #fff;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     margin-top: 0;
     width: 100%;
     height: 100%;
@@ -234,14 +232,14 @@ a:hover {
   font-style: italic;
   text-align: center;
   padding-top: ($home-border-width + 10px);
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     font-size: 12px;
     padding-top: 25px;
   }
 }
 
 .line-break {
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 769px) {
     display: none;
   }
 }
@@ -258,7 +256,7 @@ a:hover {
 .home-main-txt {
   text-align: center;
   padding: 0;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 769px) {
     font-size: 22px;
   }
   @media screen and (max-width: 480px) {
@@ -274,7 +272,7 @@ a:hover {
   height: 250px;
   background: url('/assets/images/soldier-icon.png') center center no-repeat;
   background-size: contain;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     width: 160px;
     height: 220px;
   }
@@ -305,7 +303,7 @@ a:hover {
   border-bottom: $home-container-height solid $color-theme-purple;
   border-left: $home-border-width solid transparent;
   z-index: 4;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     display: none;
     border-bottom: 100vh;
   }
@@ -320,7 +318,7 @@ a:hover {
   border-top: $home-container-height solid $color-theme-purple;
   border-right: $home-border-width solid transparent;
   z-index: 2;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     display: none;
     border-top: 100vh;
   }
@@ -334,7 +332,7 @@ a:hover {
   text-indent: -9999px;
   border-left: $home-container-width solid $color-theme-red;
   border-top: $home-border-width solid transparent;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     display: none;
     bottom: 0;
     border-left: 100%;
@@ -367,7 +365,7 @@ a:hover {
   border-left: $home-border-length-tip solid $color-theme-red;
   border-top: $home-border-width-tip solid transparent;
   z-index: 5;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     display: none;
     bottom: 0;
   }
@@ -387,7 +385,7 @@ a:hover {
   border-bottom: 1px solid $color-theme-red;
 }
 .accordion-day-txt {
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 769px){
     font-size: 22px;
   }
   color: $color-theme-purple;
@@ -594,13 +592,13 @@ a.tellers-btn:hover, a.schedule-btn:hover {
 
 .accordion-legend {
   overflow: scroll;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 }
 
 .accordion-legend {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     position: absolute;
     top: 0;
     right: 0;
@@ -621,10 +619,10 @@ a.tellers-btn:hover, a.schedule-btn:hover {
 
 .panel-group-legend-mobile {
   z-index: 10;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     display: none;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     display: block;
   }
 }
@@ -669,7 +667,7 @@ a.tellers-btn:hover, a.schedule-btn:hover {
 }
 
 .panel-venues1 {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     display: inline-block;
     width: 30%;
     vertical-align: top;
@@ -677,7 +675,7 @@ a.tellers-btn:hover, a.schedule-btn:hover {
 }
 
 .panel-food1 {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     display: inline-block;
     width: 60%;
     vertical-align: top;
